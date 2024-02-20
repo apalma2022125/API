@@ -1,16 +1,17 @@
 {
-  "name": "api-2022125",
+  "name": "api_2022125",
   "version": "1.0.0",
-  "description": "Primera API IN6BV",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "script": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "Braulio Echeverria",
+  "author": "Ángelo Palma",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",

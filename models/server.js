@@ -2,36 +2,39 @@ const express = require('express');
 const cors = require('cors');
 const { dbConnection } = require('../db/config');
 
-class Server {
-  constructor() {
-    this.app = express();
-    this.port = process.env.PORT;
-    this.usuarioPath = '/api/usuarios';
+class Server{
 
-    this.conectarDB();
-    this.middlewares();
-    this.routes();
-  }
+    constructor(){
+        this.app = express();
+        this.port = process.env.PORT;
+        this.usuarioPath = '/api/usuarios';
+        this.animalesPath = '/api/animales';
 
-  async conectarDB() {
-    await dbConnection();
-  }
+        this.conectarDB();
+        this.middlewares();
+        this.routes();
+    }
 
-  middlewares() {
-    this.app.use(express.static('public'));
-    this.app.use(cors());
-    this.app.use(express.json());
-  }
+    async conectarDB(){
+        await dbConnection();
+    }
 
-  routes() {
-    this.app.use(this.usuarioPath, require('../routes/user.routes'));
-  }
+    middlewares(){
+        this.app.use(express.static('public'));
+        this.app.use(cors());
+        this.app.use(express.json());
+    }
 
-  listen() {
-    this.app.listen(this.port, () => {
-      console.log('servidor ejecutandose y escuchandose en el puerto', this.port)
-    });
-  }
+    routes(){
+        this.app.use(this.usuarioPath, require('../routes/user.routes'));
+        this.app.use(this.animalesPath, require('../routes/animales.routes'))
+    }
+
+    listen(){
+        this.app.listen(this.port, () =>{
+            console.log('Servidor ejecutandose y escuchando el puerto', this.port)
+        });
+    }
 }
 
 module.exports = Server;

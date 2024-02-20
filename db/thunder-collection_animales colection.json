@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "animales colection",
+    "dateExported": "2024-02-08T03:00:21.796Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2adf4361-1ad1-4756-bf60-42deea8b2b22",
+            "colId": "ba0f9256-2c27-4d8a-b10b-88262e1b32ec",
+            "containerId": "",
+            "name": "animales post",
+            "url": "http://localhost:3000/api/animales",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-08T02:29:27.236Z",
+            "modified": "2024-02-08T02:57:55.669Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\n{\n  \"animal\":\"Perro\",\n  \"Raza\":\"Husky\",\n  \"edad\":\"3_meses\",\n  \"sexo\":\"Macho\",\n  \"Sesion\":\"2_de_marzo\"\n}\n\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "94b767a5-73b9-4270-9605-218ab51d02ff",
+            "colId": "ba0f9256-2c27-4d8a-b10b-88262e1b32ec",
+            "containerId": "",
+            "name": "animales get",
+            "url": "http://localhost:3000/api/animales",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-08T02:40:31.139Z",
+            "modified": "2024-02-08T02:42:53.546Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5aa2443-1dee-4506-b94a-326c9ebaf5e2",
+            "colId": "ba0f9256-2c27-4d8a-b10b-88262e1b32ec",
+            "containerId": "",
+            "name": "animales getById",
+            "url": "http://localhost:3000/api/animales/65c44333902bc2f5abd5140c",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-08T02:41:20.892Z",
+            "modified": "2024-02-08T02:58:14.818Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb30f931-9aee-4295-b750-4c04225fdb01",
+            "colId": "ba0f9256-2c27-4d8a-b10b-88262e1b32ec",
+            "containerId": "",
+            "name": "animales put",
+            "url": "http://localhost:3000/api/animales/65c44333902bc2f5abd5140c",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-08T02:41:50.724Z",
+            "modified": "2024-02-08T02:58:22.230Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"edad\":\"5_Semanas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef230e9e-20e2-4bd8-9ab6-219af3bb293f",
+            "colId": "ba0f9256-2c27-4d8a-b10b-88262e1b32ec",
+            "containerId": "",
+            "name": "animales delete",
+            "url": "http://localhost:3000/api/animales/65c43edc902bc2f5abd51400",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-08T02:44:46.071Z",
+            "modified": "2024-02-08T02:58:49.646Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

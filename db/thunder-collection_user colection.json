@@ -1,0 +1,85 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user colection",
+    "dateExported": "2024-02-08T02:59:30.302Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95b99c56-d680-4aa7-90c0-fb2a464edf54",
+            "colId": "26e9e95a-738a-44a5-9c1a-faf53f30ddaa",
+            "containerId": "",
+            "name": "post user",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-08T01:53:05.880Z",
+            "modified": "2024-02-08T02:22:40.298Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"nombre\":\"test1\",\n \"correo\":\"test1@gmail.com\",\n  \"password\":\"123456\",\n  \"role\":\"ADMIN_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f53eace1-2155-4784-8112-1c299c18ff41",
+            "colId": "26e9e95a-738a-44a5-9c1a-faf53f30ddaa",
+            "containerId": "",
+            "name": "get user",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-08T01:53:22.071Z",
+            "modified": "2024-02-08T01:53:22.071Z",
+            "headers": []
+        },
+        {
+            "_id": "ada7ea04-08b3-4145-bd5a-af7cc5b6608e",
+            "colId": "26e9e95a-738a-44a5-9c1a-faf53f30ddaa",
+            "containerId": "",
+            "name": "get userById",
+            "url": "",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-08T01:53:33.614Z",
+            "modified": "2024-02-08T01:53:33.614Z",
+            "headers": []
+        },
+        {
+            "_id": "fd30671c-487e-4139-a138-2b46648cf784",
+            "colId": "26e9e95a-738a-44a5-9c1a-faf53f30ddaa",
+            "containerId": "",
+            "name": "put user",
+            "url": "",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-08T01:53:46.793Z",
+            "modified": "2024-02-08T01:53:52.020Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0fa20fc2-3e69-4dfe-a6cc-4bc57032626c",
+            "colId": "26e9e95a-738a-44a5-9c1a-faf53f30ddaa",
+            "containerId": "",
+            "name": "delete user",
+            "url": "http://localhost:3000/api/animales",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-08T01:54:12.606Z",
+            "modified": "2024-02-08T02:26:29.347Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"animal\":\"Gato\",\n  \"Raza\":\"naranja\",\n  \"edad\":\"3 meses\",\n  \"sexo\":\"Hembra\",\n  \"Sesion\":\"2 de marzo\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
